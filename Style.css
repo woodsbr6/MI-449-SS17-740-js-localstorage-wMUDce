@@ -1,0 +1,12 @@
+
+#togBut {
+  border: 10px solid white;
+  border-radius: 50px;
+  background: #8296df;
+  padding: 5px;
+}
+
+#togBut:hover {
+  background: black;
+  color: white;
+}
