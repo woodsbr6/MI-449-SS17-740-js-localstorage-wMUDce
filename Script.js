@@ -9,5 +9,15 @@ function toggleNightMode () {
     document.getElementById('nightLight').style.backgroundColor = 'white'
   }
 }
+var nightLight = window.localStorage.getItem('nightLight')
 
-var nightLight = window.localStorage.getItem('nightLight') === 'true'
+   // If no firstName was previously saved...
+   if (nightLight === null) {
+     // Ask the user for their first name
+     color = window.prompt('Night!')
+     if (color === null) {
+       backgroundColor = 'Day'
+     } else {
+       window.localStorage.setItem('Night', 'Day')
+     }
+   }
